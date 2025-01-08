@@ -2,6 +2,8 @@ from fastapi import FastAPI
 from dotenv import load_dotenv
 import os
 from routers import users, leads, campaigns, workflows, triggers, actions
+from routers.recommendations import router as recommendations_router
+from routers.lead_scoring import router as lead_scoring_router
 
 app = FastAPI()
 
